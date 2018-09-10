@@ -15,6 +15,7 @@
     "lint:fix": "npm run lint -- --fix",
     "precommit": "lint-staged",
     "prepublish": "npm run lint && npm run test && npm run build",
+    "release": "release-it --no-npm.publish",
     "test": "jest --coverage"
   },
   "repository": {
@@ -35,6 +36,7 @@
     "jest": "^23.5.0",
     "lint-staged": "^7.2.2",
     "prettier": "^1.14.2",
+    "release-it": "^7.6.1",
     "rollup": "^0.65.2",
     "rollup-plugin-typescript2": "^0.17.0",
     "ts-jest": "^23.1.4",
