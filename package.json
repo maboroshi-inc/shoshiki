@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/maboroshi-inc/shoshiki/issues"
   },
-  "homepage": "https://github.com/maboroshi-inc/shoshiki#readme"
+  "homepage": "https://github.com/maboroshi-inc/shoshiki#readme",
+  "devDependencies": {
+    "rollup": "^0.65.2",
+    "rollup-plugin-typescript2": "^0.17.0",
+    "typescript": "^3.0.3"
+  }
 }
