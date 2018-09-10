@@ -1,2 +1,2 @@
 # shoshiki
-Common utilities to format text.
+テキスト整形ユーティリティ
