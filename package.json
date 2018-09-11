@@ -14,7 +14,7 @@
     "lint": "tslint src/**/*.ts __tests__/**/*.ts",
     "lint:fix": "npm run lint -- --fix",
     "precommit": "lint-staged",
-    "prepublish": "npm run lint && npm run test && npm run build",
+    "prepublishOnly": "npm run lint && npm run test && npm run build",
     "release": "release-it --no-npm.publish",
     "test": "jest --coverage"
   },
