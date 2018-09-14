@@ -5,10 +5,6 @@
 version: 2
 jobs:
   build:
-    branches:
-      ignore:
-        - master
-
     docker:
       # specify the version you desire here
       - image: circleci/node:8
@@ -30,20 +26,12 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - run: npm install
+      - run: yarn install
 
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-
-      # run lint
-      - run: npm run lint
-
-      # run type checking
-      - run: npx tsc --noEmit
         
       # run tests!
-      - run:
-          name: Jest Suite
-          command: npx jest --ci
+      - run: yarn test
