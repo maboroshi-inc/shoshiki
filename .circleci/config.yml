@@ -5,10 +5,6 @@
 version: 2
 jobs:
   build:
-    branches:
-      ignore:
-        - master
-
     docker:
       # specify the version you desire here
       - image: circleci/node:8
@@ -36,7 +32,7 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-
+          
       # run lint
       - run: npm run lint
 
@@ -44,6 +40,4 @@ jobs:
       - run: npx tsc --noEmit
         
       # run tests!
-      - run:
-          name: Jest Suite
-          command: npx jest --ci
+      - run: npx jest --ci
