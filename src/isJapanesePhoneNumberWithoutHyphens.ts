@@ -4,5 +4,5 @@
  * @param str 判定対象文字列
  */
 export function isJapanesePhoneNumberWithoutHyphens(str: string) {
-  return /^\d{10,11}$/.test(str)
+  return /^0\d{9,10}$/.test(str)
 }
