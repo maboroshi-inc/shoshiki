@@ -910,6 +910,9 @@ img { max-width: 100%; }
 <nav class="tsd-navigation secondary">
 	<ul>
 		<li class=" tsd-kind-function">
+			<a href="globals.html#hiraganatokatakana" class="tsd-kind-icon">hiragana<wbr>ToKatakana</a>
+		</li>
+		<li class=" tsd-kind-function">
 			<a href="globals.html#isemailaddress" class="tsd-kind-icon">isEMail<wbr>Address</a>
 		</li>
 		<li class=" tsd-kind-function">
@@ -917,6 +920,9 @@ img { max-width: 100%; }
 		</li>
 		<li class=" tsd-kind-function">
 			<a href="globals.html#isjapanesephonenumberwithouthyphens" class="tsd-kind-icon">is<wbr>Japanese<wbr>Phone<wbr>Number<wbr>Without<wbr>Hyphens</a>
+		</li>
+		<li class=" tsd-kind-function">
+			<a href="globals.html#katakanatohiragana" class="tsd-kind-icon">katakana<wbr>ToHiragana</a>
 		</li>
 		<li class=" tsd-kind-function">
 			<a href="globals.html#nltobr" class="tsd-kind-icon">nl<wbr>ToBr</a>
@@ -930,7 +936,7 @@ img { max-width: 100%; }
 	<div class="content-wrap">
 		<div class="tsd-panel tsd-typography">
 			<h1 id="shoshiki">shoshiki</h1>
-			<p>テキスト整形ユーティリティ</p>
+			<p>テキストを整形したり判定したりするユーティリティ</p>
 			<h2 id="-">インストール</h2>
 			<pre><code class="language-sh">npm install @maboroshi/shoshiki</code></pre>
 			<p>or</p>
@@ -949,9 +955,11 @@ img { max-width: 100%; }
 					<section class="tsd-index-section ">
 						<h3>Functions</h3>
 						<ul class="tsd-index-list">
+							<li class="tsd-kind-function"><a href="globals.html#hiraganatokatakana" class="tsd-kind-icon">hiragana<wbr>ToKatakana</a></li>
 							<li class="tsd-kind-function"><a href="globals.html#isemailaddress" class="tsd-kind-icon">isEMail<wbr>Address</a></li>
 							<li class="tsd-kind-function"><a href="globals.html#isjapanesephonenumber" class="tsd-kind-icon">is<wbr>Japanese<wbr>Phone<wbr>Number</a></li>
 							<li class="tsd-kind-function"><a href="globals.html#isjapanesephonenumberwithouthyphens" class="tsd-kind-icon">is<wbr>Japanese<wbr>Phone<wbr>Number<wbr>Without<wbr>Hyphens</a></li>
+							<li class="tsd-kind-function"><a href="globals.html#katakanatohiragana" class="tsd-kind-icon">katakana<wbr>ToHiragana</a></li>
 							<li class="tsd-kind-function"><a href="globals.html#nltobr" class="tsd-kind-icon">nl<wbr>ToBr</a></li>
 							<li class="tsd-kind-function"><a href="globals.html#numtocommaseparated" class="tsd-kind-icon">num<wbr>ToComma<wbr>Separated</a></li>
 						</ul>
@@ -962,6 +970,37 @@ img { max-width: 100%; }
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Functions</h2>
 			<section class="tsd-panel tsd-member tsd-kind-function">
+				<a name="hiraganatokatakana" class="tsd-anchor"></a>
+				<h3>hiragana<wbr>ToKatakana</h3>
+				<ul class="tsd-signatures tsd-kind-function">
+					<li class="tsd-signature tsd-kind-icon">hiragana<wbr>ToKatakana<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/maboroshi-inc/shoshiki/blob/c218eda/src/hiraganaToKatakana.ts#L5">src/hiraganaToKatakana.ts:5</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>全角ひらがなを全角カタカナに変換する</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>str: <span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>変換対象文字列</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function">
 				<a name="isemailaddress" class="tsd-anchor"></a>
 				<h3>isEMail<wbr>Address</h3>
 				<ul class="tsd-signatures tsd-kind-function">
@@ -971,7 +1010,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/maboroshi-inc/shoshiki/blob/5391ffa/src/isEMailAdrress.ts#L7">src/isEMailAdrress.ts:7</a></li>
+								<li>Defined in <a href="https://github.com/maboroshi-inc/shoshiki/blob/c218eda/src/isEMailAdrress.ts#L7">src/isEMailAdrress.ts:7</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1010,7 +1049,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/maboroshi-inc/shoshiki/blob/5391ffa/src/isJapanesePhoneNumber.ts#L9">src/isJapanesePhoneNumber.ts:9</a></li>
+								<li>Defined in <a href="https://github.com/maboroshi-inc/shoshiki/blob/c218eda/src/isJapanesePhoneNumber.ts#L9">src/isJapanesePhoneNumber.ts:9</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1052,7 +1091,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/maboroshi-inc/shoshiki/blob/5391ffa/src/isJapanesePhoneNumberWithoutHyphens.ts#L6">src/isJapanesePhoneNumberWithoutHyphens.ts:6</a></li>
+								<li>Defined in <a href="https://github.com/maboroshi-inc/shoshiki/blob/c218eda/src/isJapanesePhoneNumberWithoutHyphens.ts#L6">src/isJapanesePhoneNumberWithoutHyphens.ts:6</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1079,6 +1118,37 @@ img { max-width: 100%; }
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function">
+				<a name="katakanatohiragana" class="tsd-anchor"></a>
+				<h3>katakana<wbr>ToHiragana</h3>
+				<ul class="tsd-signatures tsd-kind-function">
+					<li class="tsd-signature tsd-kind-icon">katakana<wbr>ToHiragana<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/maboroshi-inc/shoshiki/blob/c218eda/src/katakanaToHiragana.ts#L5">src/katakanaToHiragana.ts:5</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>全角カタカナを全角ひらがなに変換する</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>str: <span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>変換対象文字列</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function">
 				<a name="nltobr" class="tsd-anchor"></a>
 				<h3>nl<wbr>ToBr</h3>
 				<ul class="tsd-signatures tsd-kind-function">
@@ -1088,7 +1158,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/maboroshi-inc/shoshiki/blob/5391ffa/src/nlToBr.ts#L6">src/nlToBr.ts:6</a></li>
+								<li>Defined in <a href="https://github.com/maboroshi-inc/shoshiki/blob/c218eda/src/nlToBr.ts#L6">src/nlToBr.ts:6</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1125,7 +1195,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/maboroshi-inc/shoshiki/blob/5391ffa/src/numToCommaSeparated.ts#L5">src/numToCommaSeparated.ts:5</a></li>
+								<li>Defined in <a href="https://github.com/maboroshi-inc/shoshiki/blob/c218eda/src/numToCommaSeparated.ts#L5">src/numToCommaSeparated.ts:5</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
