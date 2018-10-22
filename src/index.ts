@@ -7,3 +7,6 @@ export {
 export { katakanaToHiragana } from './katakanaToHiragana'
 export { nlToBr } from './nlToBr'
 export { numToCommaSeparated } from './numToCommaSeparated'
+export {
+  zenkakuAlphaNumSymbolToHankaku
+} from './zenkakuAlphaNumSymbolToHankaku'
