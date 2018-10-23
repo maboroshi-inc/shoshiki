@@ -1,6 +1,6 @@
 import { hiraganaToZenkakuKatakana } from '../src'
 
-describe('hiraganaToKatakana', () => {
+describe('hiraganaToZenkakuKatakana', () => {
   it('あいう を アイウ に変換する', () => {
     expect(hiraganaToZenkakuKatakana('あいう')).toEqual('アイウ')
   })
