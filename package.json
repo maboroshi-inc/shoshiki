@@ -1,6 +1,6 @@
 {
   "name": "@maboroshi/shoshiki",
-  "version": "1.2.1",
+  "version": "1.2.2-alpha",
   "description": "Common utilities to format text.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
