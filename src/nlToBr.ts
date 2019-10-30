@@ -4,5 +4,5 @@
  * @param keepLine 改行コードを残すか否か
  */
 export function nlToBr(str: string, keepLine = false): string {
-  return str.replace(/(\x0D\x0A|\x0d|\x0A)/g, `<br>${keepLine ? '$1' : ''}`)
+  return str.replace(/(\r\n|\r|\n)/g, `<br>${keepLine ? '$1' : ''}`)
 }
