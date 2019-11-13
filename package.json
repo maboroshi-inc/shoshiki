@@ -13,7 +13,6 @@
     "lint": "eslint src/**/*.ts __tests__/**/*.ts",
     "lint:fix": "npm run lint -- --fix",
     "prepublishOnly": "npm run lint && npm run test && npm run build",
-    "release": "release-it --no-npm.publish",
     "test": "jest"
   },
   "repository": {
@@ -36,7 +35,6 @@
     "jest": "^24.8.0",
     "lint-staged": "^9.1.0",
     "prettier": "^1.17.1",
-    "release-it": "^12.3.0",
     "rollup": "^1.14.2",
     "rollup-plugin-commonjs": "^10.0.0",
     "rollup-plugin-filesize": "^6.1.0",
