@@ -6,7 +6,10 @@ import { isJapanesePhoneNumberWithoutHyphens } from './isJapanesePhoneNumberWith
  * @param str 判定対象文字列
  * @param withoutHyphens ハイフンを含まない文字列であるか否か
  */
-export function isJapanesePhoneNumber(str: string, withoutHyphens = false) {
+export function isJapanesePhoneNumber(
+  str: string,
+  withoutHyphens = false
+): boolean {
   if (withoutHyphens) {
     return isJapanesePhoneNumberWithoutHyphens(str)
   }
