@@ -1,0 +1,17 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: '10:00'
+    timezone: Asia/Tokyo
+  open-pull-requests-limit: 10
+  reviewers:
+  - ajunajunajun
+  - haribote
+  - isoden
+  - NaokiMatsuda
+  - oti
+  allow:
+  - dependency-type: direct
