@@ -33,7 +33,7 @@
     "eslint": "^6.8.0",
     "husky": "^4.2.3",
     "jest": "^25.1.0",
-    "lint-staged": "^10.0.8",
+    "lint-staged": "^12.3.7",
     "prettier": "^1.17.1",
     "rollup": "^2.0.6",
     "rollup-plugin-commonjs": "^10.0.0",
