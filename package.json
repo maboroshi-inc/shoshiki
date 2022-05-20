@@ -42,16 +42,5 @@
     "rollup-plugin-typescript2": "^0.31.2",
     "ts-jest": "^25.2.1",
     "typescript": "^3.8.3"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{ts,js,json,css,md}": [
-      "prettier --write",
-      "git add"
-    ]
   }
 }
