@@ -9,12 +9,12 @@ export default {
     {
       file: './dist/index.js',
       format: 'umd',
-      name: 'MathUtils'
+      name: 'MathUtils',
     },
     {
       file: './dist/index.mjs',
-      format: 'es'
-    }
+      format: 'es',
+    },
   ],
   plugins: [
     progress(),
@@ -22,12 +22,12 @@ export default {
       tsconfigOverride: {
         compilerOptions: {
           module: 'es2015',
-          moduleResolution: 'node'
+          moduleResolution: 'node',
         },
-        exclude: ['__tests__']
-      }
+        exclude: ['__tests__'],
+      },
     }),
     commonjs(),
-    filesize()
-  ]
+    filesize(),
+  ],
 }
