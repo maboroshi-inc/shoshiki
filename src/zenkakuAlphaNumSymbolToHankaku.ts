@@ -5,7 +5,7 @@
 export function zenkakuAlphaNumSymbolToHankaku(str: string): string {
   return (
     str
-      .replace(/[！-～]/g, match => {
+      .replace(/[！-～]/g, (match) => {
         const char = match.charCodeAt(0) - 0xfee0
         return String.fromCharCode(char)
       })
