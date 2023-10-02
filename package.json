@@ -39,7 +39,7 @@
     "rollup-plugin-commonjs": "^10.0.0",
     "rollup-plugin-filesize": "^9.0.0",
     "rollup-plugin-progress": "^1.1.1",
-    "rollup-plugin-typescript2": "^0.31.2",
+    "rollup-plugin-typescript2": "^0.36.0",
     "ts-jest": "^25.2.1",
     "typescript": "^3.8.3"
   }
